@@ -18,7 +18,7 @@ export type ComponentBlocks = {
   headingComponent?: Maybe<HeadingComponentBlock>;
   messageComponent?: Maybe<MessageComponentBlock>;
   codeComponent?: Maybe<CodeComponentBlock>;
-  blocks?: Array<
-    MessageComponentBlock | HeadingComponentBlock | CodeComponentBlock
+  blocks?: Maybe<
+    Array<MessageComponentBlock | HeadingComponentBlock | CodeComponentBlock>
   >;
 };

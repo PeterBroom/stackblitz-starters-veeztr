@@ -4,7 +4,9 @@ import { isDefined } from './utils/is-defined';
 import './style.css';
 
 export default function App() {
-  if (typeof data === 'undefined') return;
+  if (!isDefined(data)) {
+    return;
+  }
 
   const { titleComponent } = data || {};
 
