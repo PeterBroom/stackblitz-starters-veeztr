@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./edit/maybe-type-patterns-typescript-react/src",
+    "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"]
     }
