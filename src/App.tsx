@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { ComponentBlocks, ComponentBlock, TitleComponent } from './components/';
+import { ComponentBlock, TitleComponent } from './components/';
 import { data } from './data/data';
+import { isDefined } from './utils/is-defined';
 import './style.css';
 
 export default function App() {
@@ -10,10 +11,8 @@ export default function App() {
 
   return (
     <main>
-      {typeof titleComponent !== 'undefined' && (
-        <TitleComponent {...titleComponent} />
-      )}
-      {typeof data !== 'undefined' && <ComponentBlock components={data} />}
+      {isDefined(titleComponent) && <TitleComponent {...titleComponent} />}
+      {isDefined(data) && <ComponentBlock components={data} />}
     </main>
   );
 }

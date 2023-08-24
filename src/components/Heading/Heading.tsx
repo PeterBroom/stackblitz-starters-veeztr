@@ -1,4 +1,5 @@
 import { FC, createElement } from 'react';
+import { isDefined } from '../../utils/is-defined';
 import { HeadingComponentBlock } from './types';
 
 export const HeadingComponent: FC<HeadingComponentBlock> = ({
@@ -7,7 +8,7 @@ export const HeadingComponent: FC<HeadingComponentBlock> = ({
   tag,
 }) => {
   const attributes = { className: classname };
-  return typeof tag !== 'undefined' && typeof text !== 'undefined'
+  return isDefined(tag) && isDefined(text)
     ? createElement(tag, attributes, text)
     : undefined;
 };

@@ -14,7 +14,6 @@ const ComponentBlocks = (components) => {
     blocks &&
     blocks.map((block, index) => {
       const key = `key_${block.componentGroup.toLowerCase()}_${index}`;
-      console.log('key', key);
       switch (block.componentGroup) {
         case 'HEADING_COMPONENT':
           return <HeadingComponent {...block} key={key} />;
