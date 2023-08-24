@@ -12,7 +12,7 @@ export type HeadingTag = keyof typeof HeadingTags;
 
 export type HeadingComponentBlock = {
   componentGroup: Maybe<ComponentGroupLabel>;
-  tag: HeadingTag;
-  text?: Maybe<Scalars['String']>;
+  tag: Maybe<HeadingTag>;
+  text: Maybe<Scalars['String']>;
   classname?: Maybe<Scalars['String']>;
 };
