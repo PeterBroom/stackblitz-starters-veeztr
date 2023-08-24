@@ -1,0 +1,43 @@
+html {
+  background-color: tomato;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: Lato;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #f1f1f1;
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+
+pre {
+  border-radius: 4px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+code {
+  white-space: pre-wrap;
+}
+/* 
+code span {
+  display: block;
+  padding: 8px 10px;
+  border-bottom: 1px solid #666666;
+} */

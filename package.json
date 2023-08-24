@@ -1,0 +1,22 @@
+{
+  "name": "stackblitz-starters-veeztr",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@types/prismjs": "^1.26.0",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "prismjs": "^1.29.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}
