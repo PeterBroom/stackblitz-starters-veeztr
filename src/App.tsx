@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { ComponentBlock, TitleComponent } from './components/';
 import { data } from './data/data';
 import { isDefined } from './utils/is-defined';
