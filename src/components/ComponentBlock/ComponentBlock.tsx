@@ -7,7 +7,7 @@ interface ComponentBlockProps {
   components: ComponentBlocks;
 }
 
-const ComponentBlocks = (components: any) => {
+const Blocks = (components: any) => {
   const { blocks } = components;
 
   return (
@@ -29,5 +29,5 @@ const ComponentBlocks = (components: any) => {
 };
 
 export const ComponentBlock: FC<ComponentBlockProps> = ({ components }) => {
-  return isDefined(components) ? <ComponentBlocks {...components} /> : null;
+  return isDefined(components) ? <Blocks {...components} /> : null;
 };
