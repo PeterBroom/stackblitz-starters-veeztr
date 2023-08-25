@@ -15,6 +15,10 @@ export const data: ComponentBlocks = {
       text: 'This article discusses the code utilised in crafting the content of this article.'
     },
     {
+      componentType: 'MESSAGE_COMPONENT',
+      text: 'Source: https://stackblitz.com/edit/maybe-type-patterns-typescript-react'
+    },
+    {
       componentType: 'HEADING_COMPONENT',
       classname: 'test-class',
       text: 'Problem statement - "When data is unreliable"',
