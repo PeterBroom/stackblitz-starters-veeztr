@@ -43,15 +43,18 @@ p {
 }
 .contents {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  .contents {
+    margin: 0 auto;
+  }
 }
 
 .title {
   color: #f1f1f1;
   letter-spacing: 2px;
-}
-
-.code-block {
 }
 
 pre {
@@ -62,9 +65,3 @@ pre {
 code {
   white-space: pre-wrap;
 }
-/* 
-code span {
-  display: block;
-  padding: 8px 10px;
-  border-bottom: 1px solid #666666;
-} */
