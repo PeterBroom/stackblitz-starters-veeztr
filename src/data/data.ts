@@ -27,7 +27,7 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'The Maybe Pattern allows for the option of a null values so we are not going to hit a wall.',
+      text: 'The "maybe" pattern in TypeScript utilises union types with null or undefined to handle potentially absent values. A Maybe Type pattern enhances robustness by explicitly handling and indicating the potential absence of values, reducing unexpected errors.',
     },
     {
       componentType: 'HEADING_COMPONENT',
@@ -77,7 +77,7 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'Type Narrowing can be used to observe if data is sufficient to render a component. By making use of Javascripts "typeof" operator variables can be checked against their type.',
+      text: 'Type Narrowing can be used to observe if the data probided is sufficient enough to render a component. By making use of Javascripts "typeof" operator variables can be checked against their type.',
     },
     {
       componentType: 'HEADING_COMPONENT',
