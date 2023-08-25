@@ -1,4 +1,4 @@
-import { ComponentGroupLabel } from '../ComponentBlock/types';
+import { componentTypeLabel } from '../ComponentBlock/types';
 import { Maybe, Scalars } from '../../types/types';
 
 enum HeadingTags {
@@ -11,7 +11,7 @@ enum HeadingTags {
 export type HeadingTag = keyof typeof HeadingTags;
 
 export type HeadingComponentBlock = {
-  componentGroup: Maybe<ComponentGroupLabel>;
+  componentType: Maybe<componentTypeLabel>;
   tag: Maybe<HeadingTag>;
   text: Maybe<Scalars['String']>;
   classname?: Maybe<Scalars['String']>;

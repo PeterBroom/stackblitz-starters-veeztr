@@ -1,7 +1,7 @@
-import { ComponentGroupLabel } from '../ComponentBlock/types';
+import { componentTypeLabel } from '../ComponentBlock/types';
 import { Maybe, Scalars } from '../../types/types';
 export type TitleComponentBlock = {
-  componentGroup?: Maybe<ComponentGroupLabel>;
+  componentType?: Maybe<componentTypeLabel>;
   text?: Maybe<Scalars['String']>;
   classname?: Maybe<Scalars['String']>;
 };

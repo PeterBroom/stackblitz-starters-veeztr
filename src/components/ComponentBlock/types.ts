@@ -4,14 +4,14 @@ import { HeadingComponentBlock } from '../Heading';
 import { MessageComponentBlock } from '../Message';
 import { CodeComponentBlock } from '../Code';
 
-enum ComponentGroupLabels {
+enum componentTypeLabels {
   'TITLE_COMPONENT',
   'HEADING_COMPONENT',
   'MESSAGE_COMPONENT',
   'CODE_COMPONENT',
 }
 
-export type ComponentGroupLabel = keyof typeof ComponentGroupLabels;
+export type componentTypeLabel = keyof typeof componentTypeLabels;
 
 export type ComponentBlocks = {
   titleComponent?: Maybe<TitleComponentBlock>;

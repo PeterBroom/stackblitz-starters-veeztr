@@ -12,7 +12,9 @@ export const CodeComponent: FC<CodeComponentBlock> = ({ code, language }) => {
   return isDefined(code) ? (
     <div className="code-block">
       <pre>
-        <code className={`language-${language}`}>{code.join('\n')}</code>
+        <code className={`language-${language}`}>
+          {code ? code.join('\n') : ''}
+        </code>
       </pre>
     </div>
   ) : null;
