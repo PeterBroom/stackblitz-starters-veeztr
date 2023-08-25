@@ -11,7 +11,7 @@ enum HeadingTags {
 export type HeadingTag = keyof typeof HeadingTags;
 
 export type HeadingComponentBlock = {
-  componentGroup: Maybe<ComponentGroupLabel>;
+  componentGroup: Maybe<Scalars['String']>;
   tag: Maybe<HeadingTag>;
   text: Maybe<Scalars['String']>;
   classname?: Maybe<Scalars['String']>;

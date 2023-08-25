@@ -1,26 +1,26 @@
-import * as React from 'react';
 import { FC } from 'react';
 import { ComponentBlocks } from './types';
 import { CodeComponent, HeadingComponent, MessageComponent } from '../';
+import { isDefined } from '../../utils/is-defined';
 
 interface ComponentBlockProps {
   components: ComponentBlocks;
 }
 
-const ComponentBlocks = (components) => {
-  const { blocks } = components || {};
+const ComponentBlocks = (components: any) => {
+  const { blocks } = components;
 
   return (
     blocks &&
-    blocks.map((block, index) => {
-      const key = `key_${block.componentGroup.toLowerCase()}_${index}`;
+    blocks.map((block: any, index: number) => {
+      const id = `key_${block.componentGroup.toLowerCase()}_${index}`;
       switch (block.componentGroup) {
         case 'HEADING_COMPONENT':
-          return <HeadingComponent {...block} key={key} />;
+          return <HeadingComponent {...block} key={id} />;
         case 'MESSAGE_COMPONENT':
-          return <MessageComponent {...block} key={key} />;
+          return <MessageComponent {...block} key={id} />;
         case 'CODE_COMPONENT':
-          return <CodeComponent {...block} key={key} />;
+          return <CodeComponent {...block} key={id} />;
         default:
           return null;
       }
@@ -29,5 +29,5 @@ const ComponentBlocks = (components) => {
 };
 
 export const ComponentBlock: FC<ComponentBlockProps> = ({ components }) => {
-  return <ComponentBlocks {...components} />;
+  return isDefined(components) ? <ComponentBlocks {...components} /> : null;
 };
