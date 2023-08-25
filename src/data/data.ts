@@ -13,7 +13,7 @@ export const data: ComponentBlocks = {
     {
       componentType: 'HEADING_COMPONENT',
       classname: 'test-class',
-      text: 'When data is unreliable',
+      text: 'Problem statement - "When data is unreliable"',
       tag: 'h2',
     },
     {
