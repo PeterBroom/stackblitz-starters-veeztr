@@ -110,7 +110,7 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'In this case specified the variables with a value of "undefined" prevent rendering of the component unless it has sufficient data to do so.',
+      text: 'In this case if the data specified is absent it will be returned as "undefined" and the component will be prevented from rendering unless sufficient data is provided.',
     },
   ],
 };
