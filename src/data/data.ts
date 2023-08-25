@@ -18,7 +18,7 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'The problem with data is that it can sometimes be unreliable for instance if the source is third party. Data can somtimes unexpectedly return a null or undefined value if say something hasnt been inputed correctly. This can be problematic for development without a verbose approach to keeping the code guarded against such scenarios.',
+      text: 'The challenge with data lies in its potential unreliability, especially when derived from third-party sources. Data might occasionally yield null or undefined values, particularly when there are input errors. This situation could pose developmental challenges unless a thorough approach is taken to fortify the code against such scenarios.',
     },
     {
       componentType: 'HEADING_COMPONENT',
