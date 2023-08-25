@@ -11,6 +11,10 @@ export const data: ComponentBlocks = {
       text: 'Typescript + React',
     },
     {
+      componentType: 'MESSAGE_COMPONENT',
+      text: 'This article discusses the code utilised in crafting the content of this article.'
+    },
+    {
       componentType: 'HEADING_COMPONENT',
       classname: 'test-class',
       text: 'Problem statement - "When data is unreliable"',
