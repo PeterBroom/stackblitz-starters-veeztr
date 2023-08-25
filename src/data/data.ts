@@ -69,6 +69,13 @@ export const data: ComponentBlocks = {
     {
       componentGroup: 'CODE_COMPONENT',
       code: [
+        '// utils/is-defined.ts',
+        'export const isDefined = (value: unknown) => {',
+        '  return typeof value !== "undefined";',
+        '};',
+        '',
+        '...',
+        '',
         '// components/component.tsx',
         '',
         'export const HeadingComponent: FC<HeadingComponentBlock> = ({',
