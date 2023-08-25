@@ -6,7 +6,7 @@ export const TitleComponent: FC<TitleComponentBlock> = ({
   text,
   classname,
 }) => {
-  const tagElem = 'h1';
+  const tagName = 'h1';
   const attributes = { className: classname };
-  return isDefined(text) ? createElement(tagElem, attributes, text) : null;
+  return isDefined(text) ? createElement(tagName, attributes, text) : null;
 };
