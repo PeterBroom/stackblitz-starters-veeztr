@@ -8,7 +8,7 @@ export default function App() {
     return;
   }
 
-  const { titleComponent } = data || {};
+  const { titleComponent } = data;
 
   return (
     <main>

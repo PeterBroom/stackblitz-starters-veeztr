@@ -7,8 +7,7 @@ export const HeadingComponent: FC<HeadingComponentBlock> = ({
   classname,
   tag,
 }) => {
+  const tagElem = tag ? tag : 'h2';
   const attributes = { className: classname };
-  return isDefined(tag) && isDefined(text)
-    ? createElement(tag, attributes, text)
-    : null;
+  return isDefined(text) ? createElement(tagElem, attributes, text) : null;
 };
