@@ -18,7 +18,7 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'The challenge with data lies in its potential unreliability, especially when derived from third-party sources. Data might occasionally yield null or undefined values, particularly when there are input errors. This situation could pose developmental challenges unless a thorough approach is taken to fortify the code against such scenarios.',
+      text: 'The challenge with data lies in its potential unreliability, especially when derived from third-party sources. Data might occasionally yield null or undefined values, particularly when there are input errors. This situation could pose  challenges in development unless a thorough approach is taken to fortify the code against such scenarios.',
     },
     {
       componentType: 'HEADING_COMPONENT',
@@ -77,7 +77,7 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'Type Narrowing can be used to observe if the data probided is sufficient enough to render a component. By making use of Javascripts "typeof" operator variables can be checked against their type.',
+      text: 'Type Narrowing can be used to observe if the data provided is sufficient enough to render the UI. By making use of Javascripts "typeof" operator variables can be checked against their type.',
     },
     {
       componentType: 'HEADING_COMPONENT',
