@@ -1,3 +1,3 @@
-# stackblitz-starters-veeztr
+# Maybe Type Patterns and Type Guards
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-veeztr)
+This is a short document to explain how these patterns work.
