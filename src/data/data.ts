@@ -46,7 +46,7 @@ export const data: ComponentBlocks = {
         'type HeadingTag = keyof typeof HeadingTags;',
         '',
         'type HeadingComponentBlock = {',
-        '  tag: HeadingTag;',
+        '  tag: Maybe<HeadingTag>;',
         '  text: Maybe<Scalars["String"]>;',
         '  classname?: Maybe<Scalars["String"]>;',
         '};',
