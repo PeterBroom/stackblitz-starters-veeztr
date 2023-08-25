@@ -27,7 +27,10 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'The "maybe" pattern in TypeScript utilises union types with null or undefined to handle potentially absent values. A "maybe" pattern enhances robustness by explicitly handling and indicating the potential absence of values, reducing unexpected errors.',
+      text: 'The "maybe" pattern in TypeScript utilises union types with null or undefined to handle potentially absent values. '
+    },{
+      componentType: 'MESSAGE_COMPONENT',
+      text:'A "maybe" pattern enhances robustness by explicitly handling and indicating the potential absence of values, reducing unexpected errors.',
     },
     {
       componentType: 'HEADING_COMPONENT',
