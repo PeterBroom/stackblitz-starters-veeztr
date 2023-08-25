@@ -12,8 +12,14 @@ export default function App() {
 
   return (
     <main>
-      {isDefined(titleComponent) && <TitleComponent {...titleComponent} />}
-      {isDefined(data) && <ComponentBlock components={data} />}
+      <div className="hero">
+        <div className="hero-inner">
+          {isDefined(titleComponent) && <TitleComponent {...titleComponent} />}
+        </div>
+      </div>
+      <div className="contents">
+        {isDefined(data) && <ComponentBlock components={data} />}
+      </div>
     </main>
   );
 }

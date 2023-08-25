@@ -10,8 +10,10 @@ export const CodeComponent: FC<CodeComponentBlock> = ({ code, language }) => {
     Prism.highlightAll();
   }, []);
   return isDefined(code) ? (
-    <pre>
-      <code className={`language-${language}`}>{code.join('\n')}</code>
-    </pre>
+    <div className="code-block">
+      <pre>
+        <code className={`language-${language}`}>{code.join('\n')}</code>
+      </pre>
+    </div>
   ) : null;
 };
