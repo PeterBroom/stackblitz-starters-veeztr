@@ -80,6 +80,9 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
+      text: 'Type narrowing in TypeScript refers to the process of refining the type of a variable within a conditional block, based on runtime checks, leading to more precise type information for that variable.'
+    },{
+      componentType: 'MESSAGE_COMPONENT',
       text: 'In the context of front-end development, Type Narrowing can be used to observe if the data provided is sufficient enough to render the UI. By making use of Javascripts "typeof" operator variables can be checked against their type.',
     },
     {
