@@ -12,7 +12,7 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'This article explores the code used to craft its content, illustrating how "maybe patterns" and "type guards" can mitigate errors in the absence of data.',
+      text: 'This article explores the code used to craft this content, illustrating how "maybe patterns" and "type guards" can mitigate errors in the absence of data.',
     },
     {
       componentType: 'MESSAGE_COMPONENT',
