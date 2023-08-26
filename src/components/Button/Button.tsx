@@ -5,5 +5,5 @@ interface ButtonTypes {
   onClick(): void;
 }
 export const Button: FC<ButtonTypes> = ({ text, onClick }) => {
-  return <button onClick={onClick}>{text}</button>;
+  return <button onClick={onClick}>BUTTON {text}</button>;
 };

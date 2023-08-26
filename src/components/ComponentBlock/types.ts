@@ -1,8 +1,9 @@
 import { Maybe } from '../../types/types';
+import { CodeComponentBlock } from '../Code';
 import { TitleComponentBlock } from '../Title';
 import { HeadingComponentBlock } from '../Heading';
 import { MessageComponentBlock } from '../Message';
-import { CodeComponentBlock } from '../Code';
+import { DemoComponentBlock } from '../Demo';
 
 enum componentTypeLabels {
   'TITLE_COMPONENT',
@@ -18,6 +19,7 @@ export type ComponentBlocks = {
   titleComponent?: Maybe<TitleComponentBlock>;
   headingComponent?: Maybe<HeadingComponentBlock>;
   messageComponent?: Maybe<MessageComponentBlock>;
+  demoComponent?: Maybe<DemoComponentBlock>;
   codeComponent?: Maybe<CodeComponentBlock>;
   blocks?: Maybe<
     Array<MessageComponentBlock | HeadingComponentBlock | CodeComponentBlock>

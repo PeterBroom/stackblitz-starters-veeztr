@@ -11,6 +11,7 @@ export const DemoComponent: FC<DemoComponentBlock> = ({ text }) => {
 
   return (
     <div>
+      {text}
       <Button text={buttonText} onClick={() => toggleData()} />
     </div>
   );
