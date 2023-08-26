@@ -9,6 +9,7 @@ enum componentTypeLabels {
   'HEADING_COMPONENT',
   'MESSAGE_COMPONENT',
   'CODE_COMPONENT',
+  'DEMO_COMPONENT',
 }
 
 export type componentTypeLabel = keyof typeof componentTypeLabels;

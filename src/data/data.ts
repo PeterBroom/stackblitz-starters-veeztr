@@ -12,11 +12,11 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'This article explores the code used to craft its content, illustrating how "maybe patterns" and "type guards" can mitigate errors in the absence of data.'
+      text: 'This article explores the code used to craft its content, illustrating how "maybe patterns" and "type guards" can mitigate errors in the absence of data.',
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'Want to see the code? - https://stackblitz.com/edit/maybe-type-patterns-typescript-react'
+      text: 'Want to see the code? - https://stackblitz.com/edit/maybe-type-patterns-typescript-react',
     },
     {
       componentType: 'HEADING_COMPONENT',
@@ -35,10 +35,11 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'The "maybe" pattern in TypeScript uses union types with "null" or "undefined" to handle potentially absent values. '
-    },{
+      text: 'The "maybe" pattern in TypeScript uses union types with "null" or "undefined" to handle potentially absent values. ',
+    },
+    {
       componentType: 'MESSAGE_COMPONENT',
-      text:'A "maybe" pattern enhances robustness by explicitly handling and indicating the potential absence of values, reducing unexpected errors.',
+      text: 'A "maybe" pattern enhances robustness by explicitly handling and indicating the potential absence of values, reducing unexpected errors.',
     },
     {
       componentType: 'HEADING_COMPONENT',
@@ -88,8 +89,9 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'Type narrowing in TypeScript refers to the process of refining the type of a variable within a conditional block, based on runtime checks, leading to more precise type information for that variable.'
-    },{
+      text: 'Type narrowing in TypeScript refers to the process of refining the type of a variable within a conditional block, based on runtime checks, leading to more precise type information for that variable.',
+    },
+    {
       componentType: 'MESSAGE_COMPONENT',
       text: 'For instance, in front-end development, type narrowing can be employed to determine if the available data is adequate for UI rendering, utilising JavaScripts "typeof" operator within the conditional statement.',
     },
@@ -125,6 +127,10 @@ export const data: ComponentBlocks = {
     {
       componentType: 'MESSAGE_COMPONENT',
       text: 'In this case if the data specified is absent (in other words "undefined") the component will be prevented from rendering unless sufficient data is provided.',
+    },
+    {
+      componentType: 'DEMO_COMPONENT',
+      text: 'asdf.',
     },
   ],
 };
