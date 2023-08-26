@@ -16,7 +16,7 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'Source: https://stackblitz.com/edit/maybe-type-patterns-typescript-react'
+      text: 'Want to see the code used? - https://stackblitz.com/edit/maybe-type-patterns-typescript-react'
     },
     {
       componentType: 'HEADING_COMPONENT',
