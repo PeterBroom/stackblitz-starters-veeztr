@@ -26,7 +26,7 @@ export const data: ComponentBlocks = {
     },
     {
       componentType: 'MESSAGE_COMPONENT',
-      text: 'The challenge with data lies in its potential unreliability, especially when derived from third-party sources. Data might occasionally yield "null" or "undefined" values, particularly when there are input errors. This situation could pose  challenges during development unless a thorough approach is taken to fortify the code against such scenarios.',
+      text: 'The challenge with data lies in its potential unreliability, especially when derived from third-party sources. Data might occasionally yield "null" or "undefined" values, particularly when there are input errors or data has been omitted. This situation could pose  challenges during development unless a thorough approach is taken to fortify the code against such scenarios.',
     },
     {
       componentType: 'HEADING_COMPONENT',
