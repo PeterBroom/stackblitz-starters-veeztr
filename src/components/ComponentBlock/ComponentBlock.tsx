@@ -12,8 +12,9 @@ const Blocks = (components: any) => {
 
   return (
     blocks &&
-    blocks.map((block: any, index: number) => {
+    [...blocks].map((block: any, index: number) => {
       const id = `key_${block.componentType.toLowerCase()}_${index}`;
+
       switch (block.componentType) {
         case 'HEADING_COMPONENT':
           return <HeadingComponent {...block} key={id} />;
