@@ -1,11 +1,6 @@
 import { FC } from 'react';
 import { ComponentBlocks } from './types';
-import {
-  CodeComponent,
-  DemoComponent,
-  HeadingComponent,
-  MessageComponent,
-} from '../';
+import { CodeComponent, HeadingComponent, MessageComponent } from '../';
 import { isDefined } from '../../utils/is-defined';
 
 interface ComponentBlockProps {
