@@ -1,3 +1,3 @@
-export const isDefined = (value: unknown) => {
+export const isDefined = <T extends unknown>(value: T) => {
   return typeof value !== 'undefined';
 };

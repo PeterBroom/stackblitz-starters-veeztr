@@ -23,7 +23,7 @@ const Blocks = (components: any) => {
         case 'CODE_COMPONENT':
           return <CodeComponent {...block} key={id} />;
         default:
-          return null;
+          return undefined;
       }
     })
   );
