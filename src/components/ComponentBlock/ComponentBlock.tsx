@@ -26,8 +26,6 @@ const Blocks = (components: any) => {
           return <MessageComponent {...block} key={id} />;
         case 'CODE_COMPONENT':
           return <CodeComponent {...block} key={id} />;
-        case 'Demo_COMPONENT':
-          return <DemoComponent {...block} key={id} />;
         default:
           return null;
       }
