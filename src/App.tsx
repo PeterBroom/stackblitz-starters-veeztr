@@ -8,8 +8,7 @@ export default function App() {
     return;
   }
 
-  const { titleComponent } = data;
-
+  const { titleComponent, blocks } = data;
   return (
     <main>
       <div className="hero">
@@ -18,7 +17,7 @@ export default function App() {
         </div>
       </div>
       <div className="contents">
-        {isDefined(data) && <ComponentBlock components={data} />}
+        {isDefined(data) && <ComponentBlock {...{ blocks }} />}
       </div>
     </main>
   );

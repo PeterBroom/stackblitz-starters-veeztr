@@ -14,5 +14,5 @@ export type HeadingComponentBlock = {
   componentType: Maybe<componentTypeLabel>;
   tag: Maybe<HeadingTag>;
   text: Maybe<Scalars['String']>;
-  classname?: Maybe<Scalars['String']>;
+  classname: Maybe<Scalars['String']>;
 };

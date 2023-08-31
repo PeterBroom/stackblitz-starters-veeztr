@@ -3,18 +3,11 @@ import { ComponentBlocks } from './types';
 import { CodeComponent, HeadingComponent, MessageComponent } from '../';
 import { isDefined } from '../../utils/is-defined';
 
-interface ComponentBlockProps {
-  components: ComponentBlocks;
-}
-
-const Blocks = (components: any) => {
-  const { blocks } = components;
-
+const Blocks = (blocks: any) => {
   return (
     blocks &&
-    [...blocks].map((block: any, index: number) => {
+    blocks.blocks.map((block: any, index: number) => {
       const id = `key_${block.componentType.toLowerCase()}_${index}`;
-
       switch (block.componentType) {
         case 'HEADING_COMPONENT':
           return <HeadingComponent {...block} key={id} />;
@@ -29,6 +22,6 @@ const Blocks = (components: any) => {
   );
 };
 
-export const ComponentBlock: FC<ComponentBlockProps> = ({ components }) => {
-  return isDefined(components) ? <Blocks {...components} /> : null;
+export const ComponentBlock: FC<ComponentBlocks> = (blocks) => {
+  return isDefined(blocks) ? <Blocks {...blocks} /> : null;
 };

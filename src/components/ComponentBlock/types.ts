@@ -15,13 +15,16 @@ enum componentTypeLabels {
 
 export type componentTypeLabel = keyof typeof componentTypeLabels;
 
+export type Blocks =
+  | HeadingComponentBlock
+  | MessageComponentBlock
+  | CodeComponentBlock;
+
 export type ComponentBlocks = {
   titleComponent?: Maybe<TitleComponentBlock>;
   headingComponent?: Maybe<HeadingComponentBlock>;
   messageComponent?: Maybe<MessageComponentBlock>;
   demoComponent?: Maybe<DemoComponentBlock>;
   codeComponent?: Maybe<CodeComponentBlock>;
-  blocks?: Maybe<
-    Array<MessageComponentBlock | HeadingComponentBlock | CodeComponentBlock>
-  >;
+  blocks?: HeadingComponentBlock | MessageComponentBlock | CodeComponentBlock;
 };

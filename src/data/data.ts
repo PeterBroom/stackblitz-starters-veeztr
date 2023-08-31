@@ -1,6 +1,6 @@
 import { ComponentBlocks } from '../components/ComponentBlock/types';
 
-export const data: ComponentBlocks = {
+export const data = {
   titleComponent: {
     text: 'Maybe Type Patterns & Type Guards',
     classname: 'title',
