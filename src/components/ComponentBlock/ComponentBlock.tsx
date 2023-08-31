@@ -4,9 +4,10 @@ import { CodeComponent, HeadingComponent, MessageComponent } from '../';
 import { isDefined } from '../../utils/is-defined';
 
 const Blocks = (blocks: any) => {
+  const { blocks: items } = blocks;
   return (
-    blocks &&
-    blocks.blocks.map((block: any, index: number) => {
+    items &&
+    items.map((block: any, index: number) => {
       const id = `key_${block.componentType.toLowerCase()}_${index}`;
       switch (block.componentType) {
         case 'HEADING_COMPONENT':
